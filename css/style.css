@@ -257,14 +257,14 @@ h4 {
 
 /* ***** RESERVATION ***** */
 .reservation {
-    margin-top: 200px;
+   
     display: flex;
     justify-content: space-between;
     max-height: 596px;
 }
 
 .get__room {
-    margin-top: 25%;
+    margin-top: 15%;
     width: 50%;
 }
 
@@ -290,7 +290,7 @@ h5 {
 }
 
 .room__reserv {
-    margin-top: 20%;
+    margin-top: 10%;
     width: 50%;
 }
 
