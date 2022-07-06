@@ -1,0 +1,336 @@
+html,
+body,
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    'header header' 'main main' 'second second' 'third third' 'rooms rooms' 'reservation reservation' 'feedback feedback' 'contacts contacts';
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto,120px);
+    align-items: center;
+    /*   */
+    gap: 10px;
+}
+.header_logo {
+    width: 33%;
+    justify-self: start;
+}
+.logo {
+    justify-self: start;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+/* identical to box height */
+
+
+color: #192252;
+}
+.header_nav {
+    justify-self: center;
+}
+.nav {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+color: #192252;
+}
+
+.nav li {
+    margin: 30px;    
+}
+
+.nav li a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+    color: #192252;
+}
+.nav__links {
+}
+.header__btn {
+    justify-self: end;
+}
+
+.started {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 16px;
+    
+    color: #FFFFFF;
+    background: #0E1734;
+    border-radius: 4px;
+}
+.main__page {
+    grid-area: main;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.main__text {
+    width: 80%;
+    align-items: center;
+}
+a {
+    color:#FFFFFF
+}
+.main__text h1 {
+    align-self: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    /* or 72px */
+
+    letter-spacing: -0.01em;
+
+    color: #192252;
+}
+
+.main__text p {
+    margin-top: 24px;
+    max-width: 485px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    
+    
+    color: #848FAC;
+}
+
+.btn-dark {
+    background-color: #0E1734;;
+}
+
+.res {
+    text-decoration: none;
+}
+
+.main__img {
+    justify-self: end;
+}
+
+.img__down {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 160px;
+}
+
+.second__page {
+    grid-area: second;
+    margin-top: 160px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30%  70%;
+    grid-template-rows: 1fr;
+}
+
+.second__text {
+    margin-left: 120px;
+    
+}
+
+.second__text h3 {
+    max-width: 690px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    /* or 54px */
+
+    letter-spacing: -0.01em;
+
+    color: #192252;
+}
+
+.second__text p {
+    max-width: 584px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+
+    color: #848FAC;
+}
+
+.second__img {
+
+}
+
+
+.third__page {
+    grid-area: third;
+    max-width: 1440px;
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.activities {
+    justify-self: start;
+    max-width: 542px;
+    
+    
+}
+.food_img {
+    justify-self: start;
+    width: 384px;
+}
+
+.drink__img {
+    justify-self: start;
+}
+.food {
+    
+}
+
+.food__text {
+    max-width: 584px;
+    justify-self: center;
+    margin-left: -170px;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    /* identical to box height, or 54px */
+    
+    letter-spacing: -0.01em;
+    
+    color: #192252;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    
+    
+    color: #848FAC;
+}
+.rooms {
+    grid-area: rooms;
+}
+.reservation {
+    grid-area: reservation;
+}
+.feedback {
+    grid-area: feedback;
+}
+.contacts {
+    grid-area: contacts;
+}
+
+/* ***** ROOMS ***** */
+
+
+
+.rooms {
+    margin-top: 160px;
+    margin-left: auto;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 1fr;
+    gap:10px;
+    grid-template-areas: 
+    'rooms__title rooms__title'
+    'rooms__img rooms__img'
+    
+}
+.rooms__title {
+    grid-area: rooms__title;
+    grid-column: 1 / span 3;
+    justify-self: center;
+}
+.rooms__text {
+    text-align: center;
+    max-width: 588px;
+}
+
+.rooms-img {
+    margin-top: 180px;
+    grid-area: rooms__img;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 12px;
+    justify-items: center;
+}
+
+.single__room {
+    grid-column: 1/2;
+    justify-self: start;    
+}
+
+.double__room {
+    grid-column: 2/3;
+    
+}
+
+.bed {
+    justify-self: center;
+}
+
+.room__cootage {
+    grid-column: 3/4;
+    
+}
+
+.house {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    left: 0;
+    margin-bottom: 30px;
+}
+
+.img {
+    border-radius: 4px;
+}
